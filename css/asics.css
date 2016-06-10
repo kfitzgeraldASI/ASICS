@@ -1,0 +1,29 @@
+body {
+  font-family: 'Muli', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 27px;
+  background: none;
+  font-weight: lighter;
+}
+/*----text and links--------*/
+.green-link {
+  color: #a3ce53 !important;
+  font-weight: normal;
+}
+/*----Spacing------*/
+.no-padding {
+  padding: 0!important;
+}
+/*----Header----*/
+header .utlity-bar {
+  background-color: #3f4e5d;
+  color: #ffffff;
+}
+header .utlity-bar a {
+  color: #ffffff;
+}
+header .utlity-bar a:hover,
+header .utlity-bar a:focus {
+  color: #20afe3;
+}
