@@ -26,11 +26,77 @@ header{
 	.utlity-bar{
 		background-color: @darkblue;
 		color:@white;
+		font-size: 18px;
+		padding-top:11px;
 		a{
 			color: @white;
 		}
 		a:hover, a:focus{
 			color:@blue;
+		}
+		.utlity-social li{
+			font-size: 22px;
+			padding: 0 15px;
+		}
+		.utlity-nav {
+			li{
+				border-right: 1px solid @white;
+				padding:0 15px;
+			}
+			li:last-child{
+				border-right: none;
+				padding-right:10px;
+			}
+		}
+	}
+	.main-nav{
+		margin: 30px 0 20px 0;
+		.nav-pills{
+			li{
+				a{
+					color:@darkblue;
+					font-weight: bold;
+					border-radius: 0px;
+					padding: 5px 10px;
+					margin: 0 10px;
+				}
+				a:hover{
+					color:@white;
+					background-color:@darkblue;
+					padding: 5px 10px;
+				}
+				.active, .active a{
+					color:@white;
+					background-color:@darkblue;
+					padding: 5px 10px;
+				}
+			}
+			li.active > a, 
+			li.active > a:hover, 
+			li.active > a:focus{
+				color:@white;
+				background-color:@darkblue;
+				padding: 5px 10px;
+			}
+		}
+	}
+}
+/*-------Body------*/
+.asics-intro {
+	background-image: url('../images/asics-header-img.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	.intro-header{
+		color:@white;
+		margin-top:28%;
+		margin-bottom:28%;
+		h1{
+			border-bottom: 1px solid @white;
+			font-weight: bold;
+			font-size: 71px;
+		}
+		p{
+			font-size: 38px;
 		}
 	}
 }

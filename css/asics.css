@@ -19,6 +19,8 @@ body {
 header .utlity-bar {
   background-color: #3f4e5d;
   color: #ffffff;
+  font-size: 18px;
+  padding-top: 11px;
 }
 header .utlity-bar a {
   color: #ffffff;
@@ -26,4 +28,63 @@ header .utlity-bar a {
 header .utlity-bar a:hover,
 header .utlity-bar a:focus {
   color: #20afe3;
+}
+header .utlity-bar .utlity-social li {
+  font-size: 22px;
+  padding: 0 15px;
+}
+header .utlity-bar .utlity-nav li {
+  border-right: 1px solid #ffffff;
+  padding: 0 15px;
+}
+header .utlity-bar .utlity-nav li:last-child {
+  border-right: none;
+  padding-right: 10px;
+}
+header .main-nav {
+  margin: 30px 0 20px 0;
+}
+header .main-nav .nav-pills li a {
+  color: #3f4e5d;
+  font-weight: bold;
+  border-radius: 0px;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+header .main-nav .nav-pills li a:hover {
+  color: #ffffff;
+  background-color: #3f4e5d;
+  padding: 5px 10px;
+}
+header .main-nav .nav-pills li .active,
+header .main-nav .nav-pills li .active a {
+  color: #ffffff;
+  background-color: #3f4e5d;
+  padding: 5px 10px;
+}
+header .main-nav .nav-pills li.active > a,
+header .main-nav .nav-pills li.active > a:hover,
+header .main-nav .nav-pills li.active > a:focus {
+  color: #ffffff;
+  background-color: #3f4e5d;
+  padding: 5px 10px;
+}
+/*-------Body------*/
+.asics-intro {
+  background-image: url('../images/asics-header-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.asics-intro .intro-header {
+  color: #ffffff;
+  margin-top: 28%;
+  margin-bottom: 28%;
+}
+.asics-intro .intro-header h1 {
+  border-bottom: 1px solid #ffffff;
+  font-weight: bold;
+  font-size: 71px;
+}
+.asics-intro .intro-header p {
+  font-size: 38px;
 }
