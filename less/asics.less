@@ -11,28 +11,64 @@ body{
 	font-size:27px;
 	background:none;
 	font-weight: lighter;
+	background-color: @darkblue;
 }
 /*----text and links--------*/
+h1{
+	font-size: 60px;
+	font-weight: bold;
+	text-transform:uppercase;
+	span{
+		border: none;
+		padding:6px 30px;
+		border-radius: 4px;
+	}
+}
+button{
+	font-size: 30px;
+	font-weight: bold;
+	text-transform:uppercase;
+	border: none;
+	padding:6px 15px;
+	border-radius: 4px;
+}
 .green-link{
 	color:@green !important;
 	font-weight: normal;
+}
+/*----Color-------*/
+.white-background{
+	background-color: @white;
+	color:@darkblue;
+}
+.darkblue-background{
+	background-color: @darkblue;
+	color:@white;
 }
 /*----Spacing------*/
 .no-padding{
 	padding:0!important;
 }
+.main-margin-bottom{
+	margin-bottom: 50px !important;
+}
+.asics-main-section{
+	padding:75px 50px 75px 50px;
+	float: left;
+}
 /*----Header----*/
 header{
+	background-color:@white;
 	.utlity-bar{
 		background-color: @darkblue;
 		color:@white;
-		font-size: 18px;
-		padding-top:11px;
+		font-size: 16px;
+		padding:11px 30px 0 20px;
 		a{
 			color: @white;
 		}
 		a:hover, a:focus{
-			color:@blue;
+			color:@white;
 		}
 		.utlity-social li{
 			font-size: 22px;
@@ -51,12 +87,13 @@ header{
 	}
 	.main-nav{
 		margin: 30px 0 20px 0;
+		padding:0 30px 0 20px;
 		.nav-pills{
 			li{
 				a{
 					color:@darkblue;
 					font-weight: bold;
-					border-radius: 0px;
+					border-radius: 4px;
 					padding: 5px 10px;
 					margin: 0 10px;
 				}
@@ -86,6 +123,7 @@ header{
 	background-image: url('../images/asics-header-img.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	    box-shadow: 10px 10px 5px #888888;
 	.intro-header{
 		color:@white;
 		margin-top:28%;
@@ -98,5 +136,46 @@ header{
 		p{
 			font-size: 38px;
 		}
+	}
+}
+
+/*-------Footer-----*/
+footer{
+	background-color: @darkblue;
+	color: @white;
+	font-size: 16px;
+	.free-demo-bar{
+		background-color: @red;
+		padding: 25px;
+		button{
+			background-color: @white;
+			color:@red;
+		}
+	}
+	.footer-blue-bar {
+		padding:20px 25px 10px 25px;
+		.row{
+			padding-bottom:30px;
+		}
+		.utlity-social li{
+			padding: 0 15px;
+		}
+		.utlity-nav{
+			li{
+				border-right: 1px solid @white;
+				padding:0 15px;
+			}
+			li:last-child{
+				border-right: none;
+				padding-right:s0px;
+			}
+		}
+	}
+	a{
+		color:@white;
+		font-size: 16px;
+	}
+	a:hover, a:focus{
+		color:@white;
 	}
 }

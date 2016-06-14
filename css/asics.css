@@ -5,29 +5,67 @@ body {
   font-size: 27px;
   background: none;
   font-weight: lighter;
+  background-color: #3f4e5d;
 }
 /*----text and links--------*/
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h1 span {
+  border: none;
+  padding: 6px 30px;
+  border-radius: 4px;
+}
+button {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 4px;
+}
 .green-link {
   color: #a3ce53 !important;
   font-weight: normal;
+}
+/*----Color-------*/
+.white-background {
+  background-color: #ffffff;
+  color: #3f4e5d;
+}
+.darkblue-background {
+  background-color: #3f4e5d;
+  color: #ffffff;
 }
 /*----Spacing------*/
 .no-padding {
   padding: 0!important;
 }
+.main-margin-bottom {
+  margin-bottom: 50px !important;
+}
+.asics-main-section {
+  padding: 75px 50px 75px 50px;
+  float: left;
+}
 /*----Header----*/
+header {
+  background-color: #ffffff;
+}
 header .utlity-bar {
   background-color: #3f4e5d;
   color: #ffffff;
-  font-size: 18px;
-  padding-top: 11px;
+  font-size: 16px;
+  padding: 11px 30px 0 20px;
 }
 header .utlity-bar a {
   color: #ffffff;
 }
 header .utlity-bar a:hover,
 header .utlity-bar a:focus {
-  color: #20afe3;
+  color: #ffffff;
 }
 header .utlity-bar .utlity-social li {
   font-size: 22px;
@@ -43,11 +81,12 @@ header .utlity-bar .utlity-nav li:last-child {
 }
 header .main-nav {
   margin: 30px 0 20px 0;
+  padding: 0 30px 0 20px;
 }
 header .main-nav .nav-pills li a {
   color: #3f4e5d;
   font-weight: bold;
-  border-radius: 0px;
+  border-radius: 4px;
   padding: 5px 10px;
   margin: 0 10px;
 }
@@ -74,6 +113,7 @@ header .main-nav .nav-pills li.active > a:focus {
   background-image: url('../images/asics-header-img.png');
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 10px 10px 5px #888888;
 }
 .asics-intro .intro-header {
   color: #ffffff;
@@ -87,4 +127,43 @@ header .main-nav .nav-pills li.active > a:focus {
 }
 .asics-intro .intro-header p {
   font-size: 38px;
+}
+/*-------Footer-----*/
+footer {
+  background-color: #3f4e5d;
+  color: #ffffff;
+  font-size: 16px;
+}
+footer .free-demo-bar {
+  background-color: #b43944;
+  padding: 25px;
+}
+footer .free-demo-bar button {
+  background-color: #ffffff;
+  color: #b43944;
+}
+footer .footer-blue-bar {
+  padding: 20px 25px 10px 25px;
+}
+footer .footer-blue-bar .row {
+  padding-bottom: 30px;
+}
+footer .footer-blue-bar .utlity-social li {
+  padding: 0 15px;
+}
+footer .footer-blue-bar .utlity-nav li {
+  border-right: 1px solid #ffffff;
+  padding: 0 15px;
+}
+footer .footer-blue-bar .utlity-nav li:last-child {
+  border-right: none;
+  padding-right: s0px;
+}
+footer a {
+  color: #ffffff;
+  font-size: 16px;
+}
+footer a:hover,
+footer a:focus {
+  color: #ffffff;
 }

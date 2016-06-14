@@ -6,8 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="ASICS">
 		<!-- Styles -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<link href="css/asics.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/fakeLoader.css" type="text/css">
 		<!--Icons-->
 		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 		<link href="css/elegant-icons.css" rel="stylesheet" type="text/css">
@@ -22,7 +23,7 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="fakeloader"></div>
  			<div class="row">
 	 			<header Class="col-xs-12 no-padding">
 	 				<div class="utlity-bar clearfix">
@@ -52,19 +53,32 @@
 		 				</nav>
 		 			</div>
 	 			</header>
-	 			<section class="asics-body col-xs-12 no-padding">
+	 			<section class="asics-body col-xs-12 no-padding text-center">
 	 				<section class="asics-intro col-xs-12 no-padding text-center">
 	 					<div class="intro-header col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1">
 	 						<h1>Business Management Software</h1>
 	 						<p>Designed Specifically for the Promotional Products Industry</p>
 	 					</div>
 	 				</section>
+	 				<section class="white-background col-xs-12 no-padding">
+	 					<div class="asics-main-section">
+		 					<div class="col-xs-12 col-md-8 col-md-offset-2">
+			 					<div class="row main-margin-bottom">
+			 						<iframe src="https://www.youtube.com/embed/SHrKHkhsWmA" frameborder="0" allowfullscreen></iframe>
+			 					</div>
+			 					<div class="row">
+			 						<h1 class="main-margin-bottom"><span class="darkblue-background">Our Products</span></h1>
+			 						<p><strong>For decades, ASI Computer Systems has been building business management software designed specifically for the promotional products industry. </strong></p>
+			 					</div>
+			 				</div>
+		 				</div>
+	 				</section>
 	 			</section>
 	 			<footer Class="col-xs-12 no-padding">
 	 				<div class="free-demo-bar col-xs-12">
 	 					<button class="center-block">Request a Free Demo</button>
 	 				</div>
-	 				<div class="footer-blue-bar">
+	 				<div class="footer-blue-bar col-xs-12">
 	 					<div class="row">
 			 				<ul class="list-inline utlity-social col-xs-12 col-sm-3">
 		 						<li><a href="https://www.facebook.com/ASIComputerSystems/" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -83,19 +97,24 @@
 		 						<li><a href="#">Company</a></li>
 		 					</ul>
 		 				</div>
-		 				<div class="row">
-		 					<small><p class="col-xs-6">&copy; 2016 ASI Computer Solutions. All rights reserved.</p>
-		 					<p class="col-xs-6 text-right"><a href="#">Back To Top</a></p></small>
-		 				</div>
+		 				<small><p class="col-xs-6">&copy; 2016 ASI Computer Solutions. All rights reserved.</p>
+		 				<p class="col-xs-6 text-right"><a href="#">Back To Top</a></p></small>
 	 				</div>
 	 			</footer>
  			</div>
  		</div>
  		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="Scripts/bootstrap.min.js"></script>
+		<script src="Scripts/fakeLoader.js"></script>
 		<!-- The script block below is required in order to get tooltips to function -->
 		<script type="text/javascript">
-
+			$(document).ready(function(){
+				$(".fakeloader").fakeLoader({
+					timeToHide:1200,
+					bgColor:"#3f4e5d",
+					spinner:"spinner3"
+                });
+            });
 		</script>
  	</body>
  </html>
