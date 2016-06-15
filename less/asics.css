@@ -51,10 +51,6 @@ button {
   float: left;
 }
 /*----Header----*/
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  z-index: 900 !important;
-}
 header {
   background-color: #ffffff;
 }
