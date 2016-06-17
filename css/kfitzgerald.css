@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'ubuntu-bold';
+  src: url('../fonts/ubuntu-b-webfont.eot');
+  src: url('../fonts/ubuntu-b-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ubuntu-b-webfont.woff2') format('woff2'), url('../fonts/ubuntu-b-webfont.woff') format('woff'), url('../fonts/ubuntu-b-webfont.ttf') format('truetype'), url('../fonts/ubuntu-b-webfont.svg#arconregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ubuntu-light';
+  src: url('../fonts/ubuntu-l-webfont.eot');
+  src: url('../fonts/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ubuntu-l-webfont.woff2') format('woff2'), url('../fonts/ubuntu-l-webfont.woff') format('woff'), url('../fonts/ubuntu-l-webfont.ttf') format('truetype'), url('../fonts/ubuntu-l-webfont.svg#arconregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0 auto !important;
+  font-family: ubuntu-light !important;
+  font-size: 17px !important;
+}
+a {
+  color: #ea2727 !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #58585a !important;
+}
+a:focus {
+  text-decoration: none !important;
+}
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+header {
+  margin-bottom: 20px;
+  padding-bottom: 20px !important;
+  font-family: ubuntu-bold;
+}
+header .header-bar {
+  background-color: #000;
+  height: 65px;
+  padding: 0 15px !important;
+}
+header .header-bar h1 {
+  font-size: 22px;
+  color: #fff;
+}
+header .header-bar h1 a {
+  color: #918e8e !important;
+  z-index: 1000;
+}
+header img {
+  margin: 20px 0 ;
+}
+#kfitzgerald-main {
+  max-width: 990px;
+  display: table;
+  margin: 0 auto 100px auto;
+  float: none;
+}
+#kfitzgerald-main .mySkills {
+  margin: 20px 0 30px 0;
+  border-bottom: 3px solid #918e8e;
+  padding-bottom: 40px;
+}
+#kfitzgerald-main .mySkills img {
+  border: none !important;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+#kfitzgerald-main .mySkills ul {
+  list-style-type: none;
+  padding: 0;
+}
+#kfitzgerald-main .mySkills ul h2 {
+  margin: 0 0 10px 0;
+}
+#kfitzgerald-main .mySkills .left-skills {
+  padding-right: 19px;
+}
+#kfitzgerald-main .mySkills .right-skills {
+  padding-left: 19px;
+}
+#kfitzgerald-main .work-row {
+  margin-bottom: 50px;
+}
+#kfitzgerald-main h1 {
+  font-family: ubuntu-bold;
+  margin: 30px 0 20px;
+}
+#kfitzgerald-main h2 {
+  font-family: ubuntu-bold;
+  font-size: 25px;
+  color: #918e8e;
+  margin-bottom: 0px;
+}
+#kfitzgerald-main img {
+  border: 1px solid #58585a !important;
+}
+#kfitzgerald-main .modal-dialog {
+  max-width: 800px;
+  width: auto;
+}
+#kfitzgerald-main .modal-dialog .modal-header .modal-title {
+  font-family: ubuntu-bold;
+  font-size: 25px;
+  color: #918e8e;
+}
+#kfitzgerald-main .modal-dialog iframe {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+#kfitzgerald-main .modal-dialog .carousel-control.left {
+  background-image: none;
+}
+#kfitzgerald-main .modal-dialog .carousel-control.right {
+  background-image: none;
+}
+#kfitzgerald-main .modal-dialog .carousel-caption {
+  position: unset;
+  color: #000;
+}
+#kfitzgerald-main .modal-dialog .carousel-inner > .item > img {
+  margin: 0 auto;
+  border: none !important;
+}
+footer {
+  border-bottom: 50px solid #918e8e;
+}
+footer ul {
+  margin: 0 auto 20px auto !important;
+  width: 248px;
+  padding: 0;
+}
+footer ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+@media (min-width: 430px) and (max-width: 600px) {
+  header .header-bar h1 {
+    font-size: 14px;
+  }
+  #kfitzgerald-main {
+    margin-bottom: 30px;
+  }
+  #kfitzgerald-main .work-row {
+    margin-bottom: 0;
+  }
+  #kfitzgerald-main .work-row div {
+    margin-bottom: 30px !important;
+  }
+}
+@media (min-width: 100px) and (max-width: 430px) {
+  header .header-bar h1 {
+    font-size: 10px;
+  }
+  #kfitzgerald-main {
+    margin-bottom: 30px;
+  }
+  #kfitzgerald-main .work-row {
+    margin-bottom: 0;
+  }
+  #kfitzgerald-main .work-row div {
+    margin-bottom: 30px !important;
+  }
+}

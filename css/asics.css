@@ -18,13 +18,18 @@ h1 span {
   padding: 6px 30px;
   border-radius: 4px;
 }
+p {
+  margin: 0 0 20px 0;
+}
 button {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
   padding: 6px 15px;
   border-radius: 4px;
+  background-color: #a3ce53;
+  color: #ffffff;
 }
 .green-link {
   color: #a3ce53 !important;
@@ -57,6 +62,7 @@ button {
 }
 header {
   background-color: #ffffff;
+  margin-bottom: 0 !important;
 }
 header .utlity-bar {
   background-color: #3f4e5d;
@@ -75,17 +81,36 @@ header .utlity-bar .utlity-social li {
   font-size: 22px;
   padding: 0 15px;
 }
+header .utlity-bar .utlity-nav {
+  text-align: right;
+  padding-right: 15px;
+}
 header .utlity-bar .utlity-nav li {
   border-right: 1px solid #ffffff;
   padding: 0 15px;
 }
 header .utlity-bar .utlity-nav li:last-child {
   border-right: none;
-  padding-right: 10px;
+  padding-right: 0px;
+}
+header .main-nav.affix {
+  top: 0;
+  width: 100%;
+  z-index: 900;
+  background-color: #ffffff;
+  left: 0;
+}
+header .main-nav.affix + .utility-bar {
+  padding-top: 50px;
 }
 header .main-nav {
-  margin: 30px 0 20px 0;
-  padding: 0 30px 0 20px;
+  padding: 8px 0;
+  -webkit-box-shadow: -8px 5px 37px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 5px 37px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 5px 37px -5px rgba(0, 0, 0, 0.75);
+}
+header .main-nav .navbar-header {
+  margin-top: 8px;
 }
 header .main-nav .nav-pills li a {
   color: #3f4e5d;
@@ -100,8 +125,7 @@ header .main-nav .nav-pills li a:hover {
   background-color: #3f4e5d;
   padding: 5px 10px;
 }
-header .main-nav .nav-pills li .active,
-header .main-nav .nav-pills li .active a {
+header .main-nav .nav-pills li .active {
   color: #ffffff;
   background-color: #3f4e5d;
   padding: 5px 10px;
@@ -114,11 +138,33 @@ header .main-nav .nav-pills li.active > a:focus {
   padding: 5px 10px;
 }
 /*-------Body------*/
+.footer-more-information {
+  background-color: #a3ce53;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 900;
+  -webkit-box-shadow: -8px 10px 37px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 10px 37px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 10px 37px -5px rgba(0, 0, 0, 0.75);
+  position: fixed;
+  right: 0;
+  top: 75%;
+  width: 315px;
+  padding: 5px 10px;
+}
+.footer-more-information a {
+  color: #3f4e5d;
+}
+.footer-more-information .fa {
+  color: #ffffff;
+}
 .asics-intro {
   background-image: url('../images/asics-header-img.png');
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 10px 10px 5px #888888;
+  background-position: center center;
 }
 .asics-intro .intro-header {
   color: #ffffff;
@@ -171,4 +217,205 @@ footer a {
 footer a:hover,
 footer a:focus {
   color: #ffffff;
+}
+/* ---------------------------------------------- MEDIA QUERIES FOR DIFFERENT DEVICES ----------------- *//* For bootstrap MD */
+@media (min-width: 992px) and (max-width: 1900px) {
+  body {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  /*------header-----*/
+  header .utlity-bar {
+    font-size: 13px;
+    padding: 11px 5px 0 5px;
+  }
+  header .main-nav .nav-pills li a {
+    padding: 5px 8px;
+    margin: 0 4px;
+    font-size: 19px !important;
+  }
+  header .main-nav .nav-pills li a:hover,
+  header .main-nav .nav-pills li a:focus {
+    padding: 5px 8px;
+  }
+  header .main-nav .nav-pills li .active {
+    padding: 5px 8px;
+  }
+  header .main-nav .nav-pills li.active > a,
+  header .main-nav .nav-pills li.active > a:hover,
+  header .main-nav .nav-pills li.active > a:focus {
+    padding: 5px 8px !important;
+  }
+  /*----------body--------*/
+  .asics-intro .intro-header h1 {
+    font-size: 53px;
+  }
+  .asics-intro .intro-header p {
+    font-size: 35px;
+  }
+  /*--------foooter-------*/
+  footer {
+    font-size: 14px;
+  }
+  footer .free-demo-bar {
+    padding: 20px;
+  }
+  footer .footer-blue-bar .utlity-social li {
+    padding: 0 10px;
+  }
+  footer .footer-blue-bar .utlity-nav li {
+    padding: 0 4px;
+  }
+  footer .footer-blue-bar a {
+    font-size: 14px !important;
+  }
+}
+/* For bootstrap SM */
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 33px;
+  }
+  button {
+    font-size: 20px;
+  }
+  /*------header-----*/
+  header .utlity-bar {
+    font-size: 14px;
+    padding: 11px 5px 0 5px;
+  }
+  header .utlity-bar .utlity-nav {
+    padding-right: 0px;
+  }
+  header .main-nav {
+    padding: 20px 0;
+  }
+  header .main-nav .nav-pills li a {
+    padding: 5px 3px;
+    margin: 0 3px;
+    font-size: 15px !important;
+  }
+  header .main-nav .nav-pills li a:hover,
+  header .main-nav .nav-pills li a:focus {
+    padding: 5px 3px;
+  }
+  header .main-nav .nav-pills li .active {
+    padding: 5px 3px;
+  }
+  header .main-nav .nav-pills li.active > a,
+  header .main-nav .nav-pills li.active > a:hover,
+  header .main-nav .nav-pills li.active > a:focus {
+    padding: 5px 3px !important;
+  }
+  /*----------body--------*/
+  .asics-intro .intro-header h1 {
+    font-size: 40px;
+  }
+  .asics-intro .intro-header p {
+    font-size: 28px;
+  }
+  /*--------foooter-------*/
+  footer {
+    font-size: 12px;
+  }
+  footer .free-demo-bar {
+    padding: 16px;
+  }
+  footer .footer-blue-bar .utlity-social li {
+    padding: 0 10px;
+  }
+  footer .footer-blue-bar .utlity-nav li {
+    padding: 0 4px;
+  }
+  footer .footer-blue-bar a {
+    font-size: 12px !important;
+  }
+}
+/* LANDSCAPE PHONE displays to PORTRAIT TABLET displays - 768 and below */
+@media (min-width: 414px) and (max-width: 768px) {
+  
+}
+/* landscape PHONES and SMALLER - 767px and below*/
+@media (min-width: 100px) and (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  button {
+    font-size: 18px;
+  }
+  /*------header-----*/
+  header .utlity-bar {
+    font-size: 13px;
+    padding: 11px 5px 0 5px;
+  }
+  header .utlity-bar .utlity-nav {
+    padding-right: 0px;
+    float: left;
+    text-align: left;
+  }
+  header .utlity-bar .utlity-nav li {
+    padding: 0 7px;
+  }
+  header .main-nav {
+    padding: 0 10px 0 0;
+  }
+  header .main-nav .nav-pills li {
+    float: none;
+  }
+  header .main-nav .nav-pills li a {
+    padding: 5px 8px;
+    margin: 0 4px;
+    font-size: 19px !important;
+  }
+  header .main-nav .nav-pills li a:hover,
+  header .main-nav .nav-pills li a:focus {
+    padding: 5px 8px;
+  }
+  header .main-nav .nav-pills li .active {
+    padding: 5px 8px;
+  }
+  header .main-nav .nav-pills li.active > a,
+  header .main-nav .nav-pills li.active > a:hover,
+  header .main-nav .nav-pills li.active > a:focus {
+    padding: 5px 8px !important;
+  }
+  /*----------body--------*/
+  .asics-intro .intro-header {
+    padding: 30% 0 0 0;
+  }
+  .asics-intro .intro-header h1 {
+    font-size: 41px;
+  }
+  .asics-intro .intro-header p {
+    font-size: 22px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  footer a {
+    font-size: 12px !important;
+  }
+  footer .free-demo-bar {
+    padding: 10px;
+  }
+  footer .footer-blue-bar .row {
+    padding-bottom: 15px;
+  }
+  footer .footer-blue-bar .utlity-social li {
+    padding: 0 10px;
+  }
+  footer .footer-blue-bar .utlity-nav {
+    text-align: center;
+  }
+  footer .footer-blue-bar .utlity-nav li {
+    padding: 0px 4px;
+    margin: 9px 0;
+  }
 }
