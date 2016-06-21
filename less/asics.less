@@ -27,6 +27,13 @@ h1{
 p{
 	margin: 0 0 20px 0;
 }
+a{
+	color: @green;
+	font-weight: bold;
+}
+a:hover{
+	color:@green;
+}
 button{
 	font-size: 22px;
 	font-weight: bold;
@@ -36,6 +43,7 @@ button{
 	border-radius: 4px;
 	background-color: @green;
 	color:@white;
+	margin: 10px 0;
 }
 .green-link{
 	color:@green !important;
@@ -53,21 +61,27 @@ hr{
 	background-color: @darkblue;
 	color:@white;
 }
+.white-text{
+	color: @white;
+}
 /*----Spacing------*/
 .no-padding{
 	padding:0!important;
 }
 .main-margin-bottom{
-	margin-bottom: 50px !important;
+	margin-bottom: 100px !important;
 }
 .asics-main-section{
-	padding:75px 0px;
+	padding:100px 0px;
 	float: left;
 }
 /*----Header----*/
 .navbar-fixed-top, .navbar-fixed-bottom{
 	z-index: 900 !important;
 }
+.navbar{
+		border: none;	
+	}
 header{
 	background-color:@white;
 	margin-bottom: 0 !important;
@@ -197,7 +211,10 @@ header{
 		padding:5px 10px;
 		position: relative;
 		left: 0;
-
+		-webkit-box-shadow: -8px 10px 37px -5px rgba(0,0,0,0.45);
+		-moz-box-shadow: -8px 10px 37px -5px rgba(0,0,0,0.45);
+		box-shadow: -8px 10px 37px -5px rgba(0,0,0,0.45);
+		margin: 10px 0;
 	}
 }
 
