@@ -55,6 +55,14 @@ hr {
   background-color: #3f4e5d;
   color: #ffffff;
 }
+.white-background-blue-text {
+  background-color: #ffffff;
+  color: #20afe3;
+}
+.blue-background {
+  background-color: #20afe3;
+  color: #ffffff;
+}
 .white-text {
   color: #ffffff;
 }
@@ -68,6 +76,14 @@ hr {
 .asics-main-section {
   padding: 100px 0px;
   float: left;
+}
+blockquote {
+  border-left: none;
+  font-weight: bold;
+}
+blockquote small {
+  color: #ffffff;
+  font-weight: normal;
 }
 /*----Header----*/
 .navbar-fixed-top,
