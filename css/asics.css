@@ -39,6 +39,9 @@ button {
   color: #ffffff;
   margin: 10px 0;
 }
+.darkblue-btn {
+  background-color: #3f4e5d;
+}
 .green-link {
   color: #a3ce53 !important;
   font-weight: normal;
@@ -84,6 +87,10 @@ blockquote {
 blockquote small {
   color: #ffffff;
   font-weight: normal;
+}
+.carousel-caption {
+  top: 15%;
+  position: static;
 }
 /*----Header----*/
 .navbar-fixed-top,
@@ -222,6 +229,13 @@ header .main-nav .nav-pills li.active > a:focus {
   -moz-box-shadow: -8px 10px 37px -5px rgba(0, 0, 0, 0.45);
   box-shadow: -8px 10px 37px -5px rgba(0, 0, 0, 0.45);
   margin: 10px 0;
+}
+#Features {
+  background-image: url('../images/features-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 10px 10px 5px #888888;
+  background-position: center center;
 }
 /*-------Footer-----*/
 footer {
