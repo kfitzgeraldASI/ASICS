@@ -83,10 +83,23 @@ hr {
 blockquote {
   border-left: none;
   font-weight: bold;
+  font-size: 27px;
+  height: 250px;
 }
 blockquote small {
   color: #ffffff;
   font-weight: normal;
+}
+.panel {
+  background-color: transparent;
+  border: none;
+}
+.panel .panel-heading {
+  background-color: transparent;
+  border: none;
+}
+.panel .panel-body {
+  border: none !important;
 }
 .carousel-caption {
   top: 15%;
@@ -236,6 +249,21 @@ header .main-nav .nav-pills li.active > a:focus {
   background-size: cover;
   box-shadow: 10px 10px 5px #888888;
   background-position: center center;
+}
+#PunchOutSites {
+  background-image: url('../images/punch-out-sites-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 10px 10px 5px #888888;
+  background-position: center center;
+}
+#ASICS-Contact-From {
+  background-color: #a3ce53;
+  padding: 30px;
+}
+#ASICS-Contact-From h2 {
+  color: #ffffff;
+  padding-bottom: 30px;
 }
 /*-------Footer-----*/
 footer {

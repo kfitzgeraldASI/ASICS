@@ -89,9 +89,22 @@ hr{
 blockquote{
 	border-left: none;
 	font-weight: bold;
+	font-size: 27px;
+	height: 250px;
 	small{
 		color:@white;
 		font-weight: normal;
+	}
+}
+.panel{
+	background-color: transparent;
+	border: none;
+	.panel-heading{
+		background-color: transparent;
+		border: none;
+	}
+	.panel-body{
+		border: none !important;
 	}
 }
 .carousel-caption{
@@ -246,6 +259,21 @@ header{
 	background-size: cover;
 	box-shadow: 10px 10px 5px #888888;
 	background-position: center center;
+}
+#PunchOutSites{
+	background-image: url('../images/punch-out-sites-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 10px 10px 5px #888888;
+	background-position: center center;
+}
+#ASICS-Contact-From{
+	background-color: @green;
+	padding:30px;
+	h2{
+		color: @white;
+		padding-bottom: 30px;
+	}
 }
 
 /*-------Footer-----*/
