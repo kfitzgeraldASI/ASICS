@@ -24,6 +24,14 @@ h1{
 		border-radius: 4px;
 	}
 }
+h2{
+	font-size: 48px;
+}
+h3{
+	font-size: 32px;
+	text-transform: uppercase;;
+	font-weight: bold;
+}
 p{
 	margin: 0 0 20px 0;
 }
@@ -34,7 +42,7 @@ a{
 a:hover{
 	color:@green;
 }
-button{
+button, .btn{
 	font-size: 22px;
 	font-weight: bold;
 	text-transform:uppercase;
@@ -83,7 +91,8 @@ hr{
 	margin-bottom: 100px !important;
 }
 .asics-main-section{
-	padding:100px 0px;
+	padding-top:100px;
+	padding-bottom: 100px;
 	float: left;
 }
 blockquote{
@@ -267,15 +276,23 @@ header{
 	box-shadow: 10px 10px 5px #888888;
 	background-position: center center;
 }
-#ASICS-Contact-From{
-	background-color: @green;
-	padding:30px;
-	h2{
-		color: @white;
-		padding-bottom: 30px;
+#Contact{
+	.contact-info{
+		font-size: 20px;
+	}
+	#ASICS-Contact-From{
+		background-color: @green;
+		padding:30px;
+		h2{
+			color: @white;
+			padding-bottom: 30px;
+		}
+		button{
+			background-color: @darkblue;
+			color: @white;
+		}
 	}
 }
-
 /*-------Footer-----*/
 footer{
 	background-color: @darkblue;
@@ -390,7 +407,16 @@ footer{
 	h1{
 		font-size: 33px;
 	}
+	h2{
+		font-size: 27px;
+	}
+	h3{
+		font-size: 24px;
+	}
 	button{
+		font-size: 20px;
+	}
+	blockquote{
 		font-size: 20px;
 	}
 	/*------header-----*/
@@ -435,6 +461,11 @@ footer{
 			font-size: 28px;
 		}
 	}
+	#Contact{
+		.contact-info{
+			font-size: 16px;
+		}
+	}
 	/*--------foooter-------*/
 	footer{
 		font-size: 12px;
@@ -461,13 +492,31 @@ footer{
 /* landscape PHONES and SMALLER - 767px and below*/
 @media (min-width: 100px) and (max-width: 767px){
 	body{
-		font-size:18px;
+		font-size:16px;
 	}
 	h1{
-		font-size: 22px;
+		font-size: 20px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	h3{
+		font-size: 16px;
 	}
 	button{
-		font-size: 18px;
+		font-size: 16px;
+	}
+	.main-margin-bottom{
+		margin-bottom: 50px !important;
+	}
+	.asics-main-section{
+		padding-top:50px;
+		padding-bottom: 50px;
+	}
+	blockquote{
+		font-size: 16px;
+		font-weight: normal;
+		height: 308px;
 	}
 	/*------header-----*/
 	header{
@@ -516,6 +565,11 @@ footer{
 		}
 		p{
 			font-size: 22px;
+		}
+	}
+	#Contact{
+		.contact-info{
+			font-size: 16px;
 		}
 	}
 	footer{

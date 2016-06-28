@@ -18,6 +18,14 @@ h1 span {
   padding: 6px 30px;
   border-radius: 4px;
 }
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 p {
   margin: 0 0 20px 0;
 }
@@ -28,7 +36,8 @@ a {
 a:hover {
   color: #a3ce53;
 }
-button {
+button,
+.btn {
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
@@ -77,7 +86,8 @@ hr {
   margin-bottom: 100px !important;
 }
 .asics-main-section {
-  padding: 100px 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   float: left;
 }
 blockquote {
@@ -257,13 +267,20 @@ header .main-nav .nav-pills li.active > a:focus {
   box-shadow: 10px 10px 5px #888888;
   background-position: center center;
 }
-#ASICS-Contact-From {
+#Contact .contact-info {
+  font-size: 20px;
+}
+#Contact #ASICS-Contact-From {
   background-color: #a3ce53;
   padding: 30px;
 }
-#ASICS-Contact-From h2 {
+#Contact #ASICS-Contact-From h2 {
   color: #ffffff;
   padding-bottom: 30px;
+}
+#Contact #ASICS-Contact-From button {
+  background-color: #3f4e5d;
+  color: #ffffff;
 }
 /*-------Footer-----*/
 footer {
@@ -366,7 +383,16 @@ footer a:focus {
   h1 {
     font-size: 33px;
   }
+  h2 {
+    font-size: 27px;
+  }
+  h3 {
+    font-size: 24px;
+  }
   button {
+    font-size: 20px;
+  }
+  blockquote {
     font-size: 20px;
   }
   /*------header-----*/
@@ -404,6 +430,9 @@ footer a:focus {
   .asics-intro .intro-header p {
     font-size: 28px;
   }
+  #Contact .contact-info {
+    font-size: 16px;
+  }
   /*--------foooter-------*/
   footer {
     font-size: 12px;
@@ -428,13 +457,31 @@ footer a:focus {
 /* landscape PHONES and SMALLER - 767px and below*/
 @media (min-width: 100px) and (max-width: 767px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
   h1 {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
   }
   button {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .main-margin-bottom {
+    margin-bottom: 50px !important;
+  }
+  .asics-main-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  blockquote {
+    font-size: 16px;
+    font-weight: normal;
+    height: 308px;
   }
   /*------header-----*/
   header .utlity-bar {
@@ -481,6 +528,9 @@ footer a:focus {
   }
   .asics-intro .intro-header p {
     font-size: 22px;
+  }
+  #Contact .contact-info {
+    font-size: 16px;
   }
   footer {
     font-size: 12px;
