@@ -279,7 +279,10 @@ header .main-nav .nav-pills li.active > a:focus {
   background-position: center center;
 }
 #Contact .contact-info {
-  font-size: 20px;
+  font-size: 16px;
+}
+#Contact .contact-info img {
+  padding-bottom: 30px;
 }
 #Contact #ASICS-Contact-From {
   background-color: #a3ce53;
@@ -479,7 +482,8 @@ footer a:focus {
   h3 {
     font-size: 16px;
   }
-  button {
+  button,
+  .btn {
     font-size: 16px;
   }
   .main-margin-bottom {
@@ -508,7 +512,7 @@ footer a:focus {
     padding: 0 7px;
   }
   header .main-nav {
-    padding: 0 10px 0 0;
+    padding: 10px 0;
   }
   header .main-nav .nav-pills li {
     float: none;
