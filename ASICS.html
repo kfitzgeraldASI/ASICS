@@ -79,7 +79,7 @@
 					<section id="Products" class="white-background col-xs-12 no-padding">
 						<div class="asics-main-section">
 		 					<div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 main-margin-bottom">
-			 					<div class="row main-margin-bottom asics-video">
+			 					<div class="main-margin-bottom asics-video col-xs-12">
 			 						<iframe src="https://www.youtube.com/embed/SHrKHkhsWmA" frameborder="0" allowfullscreen></iframe>
 			 					</div>
 			 					<div class="row col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
@@ -509,9 +509,14 @@
 					menuItems
 						.parent().removeClass("active")
 						.end().filter("[href='#"+id+"']").parent().addClass("active");
-												$('#Contact').parent().removeClass("active");
-					} 
+					}
 				});
+				$(window).scroll(function(){
+    if ( (!$(window).scrollTop()>50) || (!$("#top-menu a").hasClass("active")) )
+    {
+        $("#top-menu a").removeClass("active");
+    }
+});var elmnt = document.getElementById("myDIV");
 				
 				$('#carousel-testimonials').carousel({
 					pause: true,
