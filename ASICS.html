@@ -26,7 +26,7 @@
 		<div class="fakeloader"></div>
 		<div class="container-fluid">
 			<div class="row">
-				<section id="Home" class="col-xs-12 no-padding">
+				<section class="col-xs-12 no-padding">
 		 			<header Class="col-xs-12 no-padding navbar navbar-default">
 		 				<div class="utlity-bar clearfix">
 		 					<ul class="list-inline utlity-social hidden-xs col-sm-4">
@@ -51,10 +51,11 @@
 									<span class="icon-bar"></span>
 								</button>
 							</div>
+							<div id="checkdiv"></div>
 							<div id="navbar" class="navbar-collapse collapse col-xs-12 pull-right">
 								<nav>
 									<ul id="top-menu" class="nav navbar-nav nav-pills">
-				 						<li class="active"><a href="#Home">Home</a></li>
+				 						<li><a href="#Home2">Home</a></li>
 				 						<li><a href="#Products">Products</a></li>
 				 						<li><a href="#Solutions">Custom Solutions</a></li>
 				 						<li><a href="#Features">Features</a></li>
@@ -68,14 +69,17 @@
 	 				<div class="footer-more-information">
 						<a href="#ASICS-Contact-From" data-select="More-info-Select"><i class="fa fa-info-circle" aria-hidden="true"></i> Request More Information</a>
 					</div>
-					<div class="asics-intro col-xs-12 no-padding">
-						<div class="intro-header col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 text-center">
-							<h1>Business Management Software</h1>
-							<p>Designed Specifically for the Promotional Products Industry</p>
-						</div>
-					</div>
+					
 				</section>
 				<section class="asics-body col-xs-12 no-padding text-center">
+					<section id="Home2" class="col-xs-12 no-padding">
+						<div class="asics-intro col-xs-12 no-padding">
+							<div class="intro-header col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 text-center">
+								<h1>Business Management Software</h1>
+								<p>Designed Specifically for the Promotional Products Industry</p>
+							</div>
+						</div>
+					</section>
 					<section id="Products" class="white-background col-xs-12 no-padding">
 						<div class="asics-main-section">
 		 					<div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 main-margin-bottom">
@@ -274,7 +278,7 @@
 					</section>
 					<section id="Benefits" class="col-xs-12 no-padding blue-background">
 						<div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 asics-main-section">
-							<h1 class="main-margin-bottom"><span class="white-background">Benefits</span></h1>
+							<h1 class="main-margin-bottom"><span class="white-background-blue-text">Benefits</span></h1>
 							<div class="main-margin-bottom pull-left">
 								<h2>Training</h2>
 							<p>Get the most out of your ASI SmartBooks® investment. ASI Computer Systems® will help you maximize the tool and develop an efficient invoicing and payables procedure and useful reports so you can manage orders, receivables, payables and forecasting. Pick the right training option for you:</p>
@@ -466,57 +470,52 @@
 					bgColor:"#3f4e5d",
 					spinner:"spinner3"
                 });
-            /*------Nav scroll------*/
-				var lastId,
-				topMenu = $("#top-menu"),
-				topMenuHeight = topMenu.outerHeight()+45,
-				// All list items
-				menuItems = topMenu.find("a"),
-				// Anchors corresponding to menu items
-				scrollItems = menuItems.map(function(){
-					var item = $($(this).attr("href"));
-					if (item.length) { return item; }
-				});
+                /*------scroll menu----*/
+                $(window).scroll(function(){
+	        var window_top = $(window).scrollTop() + 45;
+	       // the "12" should equal the margin-top value for nav.stickydiv
 
-				// Bind click handler to menu items
-				// so we can get a fancy scroll animation
-				menuItems.click(function(e){
-					var href = $(this).attr("href"),
-						offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-					$('html, body').stop().animate({ 
-						scrollTop: offsetTop
-					}, 300);
-					e.preventDefault();
-				});
-
-				// Bind to scroll
-				$(window).scroll(function(){
-					// Get container scroll position
-					var fromTop = $(this).scrollTop()+topMenuHeight;
-
-					// Get id of current scroll item
-					var cur = scrollItems.map(function(){
-						if ($(this).offset().top < fromTop)
-						return this;
-				});
-				// Get the id of the current element
-				cur = cur[cur.length-1];
-				var id = cur && cur.length ? cur[0].id : "";
-
-				if (lastId !== id) {
-					lastId = id;
-					// Set/remove active class
-					menuItems
-						.parent().removeClass("active")
-						.end().filter("[href='#"+id+"']").parent().addClass("active");
-					}
-				});
-				$(window).scroll(function(){
-    if ( (!$(window).scrollTop()>50) || (!$("#top-menu a").hasClass("active")) )
-    {
-        $("#top-menu a").removeClass("active");
-    }
-});var elmnt = document.getElementById("myDIV");
+	        var div_top = $('#checkdiv').offset().top;
+	        if (window_top >= div_top) {
+	                $('#navbar').addClass('stickydiv');
+	            } else {
+	                $('#navbar').removeClass('stickydiv');
+	            }
+	    }); 
+	 
+	  $(document).on("scroll", onScroll);
+	 
+$('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
+    $('a').each(function () {
+        $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+     var target = this.hash,
+     menu = target;
+    $target = $(target);
+   $('html, body').stop().animate({
+        'scrollTop': $target.offset().top+2
+    }, 600, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+    });
+});
+function onScroll(event){
+	    var scrollPos = $(document).scrollTop();
+	    $('#navbar a').each(function () {
+	        var currLink = $(this);
+	        var refElement = $(currLink.attr("href"));
+	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+	            $('#navbar ul li a').removeClass("active");
+	            currLink.addClass("active");
+	        }
+	        else{
+	            currLink.removeClass("active");
+	        }
+	    });
+	}
 				
 				$('#carousel-testimonials').carousel({
 					pause: true,
