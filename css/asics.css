@@ -38,6 +38,7 @@ a:hover {
 }
 a:focus {
   outline: none;
+  color: #a3ce53;
 }
 button,
 .btn {
