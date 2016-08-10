@@ -28,6 +28,7 @@ h3 {
 }
 p {
   margin: 0 0 20px 0;
+  widows: 2;
 }
 a {
   color: #a3ce53;
