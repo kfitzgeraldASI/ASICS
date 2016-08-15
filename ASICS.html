@@ -117,7 +117,7 @@
 										</div>
 										<p>Trust ASI SmartBooks, the smart software made for our industry and for you.</p>
 										<div class="col-xs-12 col-sm-6">
-											<a href="#ASICS-Contact-From" data-select="Smartbooks-Info-Select" class="btn">PDF Download</a>
+											<a href="#ASICS-Contact-From" data-select="Smartbooks-PDF-Select" class="btn">PDF Download</a>
 										</div>
 										<div class="col-xs-12 col-sm-6">
 											<a href="#ASICS-Contact-From" data-select="Smartbooks-Demo-Select" class="btn">Request a Free Demo</a>
@@ -153,7 +153,7 @@
 											</ul>
 										</div>
 										<div class="col-xs-12 col-sm-6">
-											<a href="#ASICS-Contact-From" data-select="Profitmaker-Info-Select" class="btn">PDF Download</a>
+											<a href="#ASICS-Contact-From" data-select="Profitmaker-PDF-Select" class="btn">PDF Download</a>
 										</div>
 										<div class="col-xs-12 col-sm-6">
 											<a href="#ASICS-Contact-From" data-select="Profitmaker-Demo-Select" class="btn">Request a Free Demo</a>
@@ -405,9 +405,9 @@
 								<div class="form-group">
 									<select class="form-control" id="learnMoreAbout">
 										<option value="More-info-Select">More Information</option>
-										<option value="Smartbooks-Info-Select">Smartbooks Information</option>
+										<option value="Smartbooks-PDF-Select">Smartbooks PDF</option>
 										<option value="Smartbooks-Demo-Select">Smartbooks Demo</option>
-										<option value="Profitmaker-Info-Select">ProfitMaker Information</option>
+										<option value="Profitmaker-PDF-Select">ProfitMaker PDF</option>
 										<option value="Profitmaker-Demo-Select">ProfitMaker Demo</option>
 										<option value="Features-Select">ASICS Features PDF</option>
 										<option value="ASIedi-Select">ASI EDI</option>
@@ -419,10 +419,58 @@
 									<textarea class="form-control" rows="5" placeholder="Comments"></textarea>
 								</div>
 								<div class="form-group text-right">
-									<button type="submit" class="btn btn-default">Send</button>
+									<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#MoreInfo-Modal">Send</button>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="MoreInfo-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<h3 class="modal-title" id="myModalLabel">Thank you for getting in touch!</h3>
+											</div>
+											<div class="modal-body">
+												<div class="MoreInfo More-info-Select-Modal">
+													<p>We appreciate you contacting us about ASICS. One of our Customer Service colleagues will get back to you as soon as possible.</p>
+													<p>Have a great day ahead!</p>
+												</div>
+												<div class="MoreInfo Smartbooks-PDF-Select-Modal">
+													<p>We appreciate you contacting us about SmartBooks.</p>
+													<p>Please <a href="#">click here</a> to download the SmartBooks PDF</p>
+												</div>
+												<div class="MoreInfo Smartbooks-Demo-Select-Modal">
+													<p>We appreciate you contacting us about Smartbooks Demo. One of our Customer Service colleagues will get back to you as soon as possible.</p>
+													<p>Have a great day ahead!</p>
+												</div>
+												<div class="MoreInfo Profitmaker-PDF-Select-Modal">
+													<p>We appreciate you contacting us about ProfitMaker.</p>
+													<p>Please <a href="#">click here</a> to download the ProfiMaker PDF</p>
+												</div>
+												<div class="MoreInfo Profitmaker-Demo-Select-Modal">
+													<p>We appreciate you contacting us about ProfitMaker Demo. One of our Customer Service colleagues will get back to you as soon as possible.</p>
+													<p>Have a great day ahead!</p>
+												</div>
+												<div class="MoreInfo Features-Modal">
+													<p>We appreciate you contacting us about ASICS features.</p>
+													<p>Please <a href="#">click here</a> to download the ASICS features PDF</p>
+												</div>
+												<div class="MoreInfo ASIedi-Modal">
+													<p>We appreciate you contacting us about ASI EDI. One of our Customer Service colleagues will get back to you as soon as possible.</p>
+													<p>Have a great day ahead!</p>
+												</div>
+												<div class="MoreInfo PunchOutSites-Modal">
+													<p>We appreciate you contacting us about Punch-out Sites. One of our Customer Service colleagues will get back to you as soon as possible.</p>
+													<p>Have a great day ahead!</p>
+												</div>
+												<div class="MoreInfo Demo-Modal">
+													<p>We appreciate you contacting us about SmartBooks Demo. One of our Customer Service colleagues will get back to you as soon as possible.</p>
+													<p>Have a great day ahead!</p>
+												</div>
+											</div>
+										</div>
 									</div>
+								</div>
 							</form>
-						</div>
 						</div>
 					</section>
 				</section>
@@ -462,7 +510,46 @@
 		<script src="Scripts/jquery.fitvids.js"></script>
 		<!-- The script block below is required in order to get tooltips to function -->
 		<script type="text/javascript">
-			
+			$("select").change(function(){
+				$( "select option:selected").each(function(){
+					if($(this).attr("value")=="More-info-Select"){
+						$(".MoreInfo").hide();
+						$(".More-info-Select-Modal").show();
+					}
+					if($(this).attr("value")=="Smartbooks-PDF-Select"){
+						$(".MoreInfo").hide();
+						$(".Smartbooks-PDF-Select-Modal").show();
+					}
+					if($(this).attr("value")=="Smartbooks-Demo-Select"){
+						$(".MoreInfo").hide();
+						$(".Smartbooks-Demo-Select-Modal").show();
+					}
+					if($(this).attr("value")=="Profitmaker-PDF-Select"){
+						$(".MoreInfo").hide();
+						$(".Profitmaker-PDF-Select-Modal").show();
+					}
+					if($(this).attr("value")=="Profitmaker-Demo-Select"){
+						$(".MoreInfo").hide();
+						$(".Profitmaker-Demo-Select-Modal").show();
+					}
+					if($(this).attr("value")=="Features-Select"){
+						$(".MoreInfo").hide();
+						$(".Features-Modal").show();
+					}
+					if($(this).attr("value")=="ASIedi-Select"){
+						$(".MoreInfo").hide();
+						$(".ASIedi-Modal").show();
+					}
+					if($(this).attr("value")=="PunchOutSites-Select"){
+						$(".MoreInfo").hide();
+						$(".PunchOutSites-Modal").show();
+					}
+					if($(this).attr("value")=="Demo-Select"){
+						$(".MoreInfo").hide();
+						$(".Demo-Modal").show();
+					}
+				});
+			}).change();
 			/*---Loading Page-----*/
 			$(document).ready(function(){
 				$(".fakeloader").fakeLoader({

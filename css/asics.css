@@ -74,6 +74,15 @@ button:hover,
 hr {
   border-top: 1px solid #3f4e5d;
 }
+.modal-dialog {
+  max-width: 675px;
+  width: 93%;
+}
+.modal-dialog .close {
+  color: #3f4e5d !important;
+  opacity: 1;
+  background-color: #ffffff !important;
+}
 /*----Color-------*/
 .white-background {
   background-color: #ffffff;
