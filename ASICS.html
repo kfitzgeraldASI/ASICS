@@ -419,7 +419,7 @@
 										<textarea class="form-control" rows="5" placeholder="Comments"></textarea>
 									</div>
 									<div class="form-group text-right">
-										<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#MoreInfo-Modal">Send</button>
+										<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#MoreInfo-Modal" id="ContactFormBTN">Send</button>
 									</div>
 									<!-- Modal -->
 									<div class="modal fade" id="MoreInfo-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -502,6 +502,8 @@
 		<script src="Scripts/jquery.fitvids.js"></script>
 		<!-- The script block below is required in order to get tooltips to function -->
 		<script type="text/javascript">
+
+$('#ContactFormBTN').on('click', function(e) {e.preventDefault(); return true;});
 			$("select").change(function(){
 				$( "select option:selected").each(function(){
 					if($(this).attr("value")=="More-info-Select"){
