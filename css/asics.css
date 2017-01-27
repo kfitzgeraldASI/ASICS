@@ -201,6 +201,13 @@ header .main-nav {
 header .main-nav .navbar-header {
   margin-top: 8px;
 }
+header .main-nav .navbar-collapse {
+  padding-left: 0;
+}
+header .main-nav .chat-now {
+  max-width: 100px;
+  padding: 0 5px;
+}
 header .main-nav .nav-pills li a {
   color: #3f4e5d;
   font-weight: bold;
@@ -364,21 +371,21 @@ footer a:focus {
     padding: 11px 5px 0 5px;
   }
   header .main-nav .nav-pills li a {
-    padding: 5px 6px;
-    margin: 0 4px;
-    font-size: 19px !important;
+    padding: 5px 4px;
+    margin: 0 3px;
+    font-size: 18px !important;
   }
   header .main-nav .nav-pills li a:hover,
   header .main-nav .nav-pills li a:focus {
-    padding: 5px 8px;
+    padding: 5px 4px;
   }
   header .main-nav .nav-pills li .active {
-    padding: 5px 8px;
+    padding: 5px 4px;
   }
   header .main-nav .nav-pills li.active > a,
   header .main-nav .nav-pills li.active > a:hover,
   header .main-nav .nav-pills li.active > a:focus {
-    padding: 5px 8px !important;
+    padding: 5px 4px !important;
   }
   /*----------body--------*/
   .asics-intro .intro-header h1 {
@@ -435,10 +442,15 @@ footer a:focus {
   header .main-nav {
     padding: 20px 0;
   }
+  header .main-nav .chat-now {
+    max-width: 65px;
+    padding: 0;
+    margin-top: 5px;
+  }
   header .main-nav .nav-pills li a {
     padding: 5px 3px;
-    margin: 0 3px;
-    font-size: 15px !important;
+    margin: 0 2px;
+    font-size: 14px !important;
   }
   header .main-nav .nav-pills li a:hover,
   header .main-nav .nav-pills li a:focus {
@@ -531,6 +543,15 @@ footer a:focus {
   }
   header .main-nav {
     padding: 10px 0;
+  }
+  header .main-nav .chat-now {
+    margin-left: 10px;
+    width: 100%;
+  }
+  header .main-nav .nav-pills {
+    padding: 0 20px;
+    float: left;
+    width: 100%;
   }
   header .main-nav .nav-pills li {
     float: none;

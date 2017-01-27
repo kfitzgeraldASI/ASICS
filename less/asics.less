@@ -201,6 +201,13 @@ header{
 		.navbar-header {
 			margin-top: 8px;
 		}
+		.navbar-collapse{
+			padding-left: 0;
+		}
+		.chat-now{
+			max-width: 100px;
+			padding: 0 5px;
+		}
 		.nav-pills{
 			li{
 				a{
@@ -380,21 +387,21 @@ footer{
 			.nav-pills{
 				li{
 					a{
-						padding: 5px 6px;
-						margin: 0 4px;
-						font-size: 19px !important;
+						padding: 5px 4px;
+						margin: 0 3px;
+						font-size: 18px !important;
 					}
 					a:hover, a:focus{
-						padding: 5px 8px;
+						padding: 5px 4px;
 					}
 					.active{
-						padding: 5px 8px;
+						padding: 5px 4px;
 					}
 				}
 				li.active > a, 
 				li.active > a:hover, 
 				li.active > a:focus{
-					padding: 5px 8px !important;
+					padding: 5px 4px !important;
 				}
 			}
 		}
@@ -458,12 +465,17 @@ footer{
 		}
 		.main-nav{
 			padding:20px 0;
+			.chat-now{
+				max-width: 65px;
+				padding: 0;
+				margin-top:5px;
+			}
 			.nav-pills{
 				li{
 					a{
 						padding: 5px 3px;
-						margin: 0 3px;
-						font-size: 15px !important;
+						margin: 0 2px;
+						font-size: 14px !important;
 					}
 					a:hover, a:focus{
 						padding: 5px 3px;
@@ -565,7 +577,14 @@ footer{
 		}
 		.main-nav{
 			padding:10px 0;
+			.chat-now{
+				margin-left: 10px;
+				width: 100%;
+			}
 			.nav-pills{
+				padding:0 20px;
+				float: left;
+				width: 100%;
 				li{
 					float: none;
 					a{
