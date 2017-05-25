@@ -1,0 +1,129 @@
+body {
+  font-family: 'Muli', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 27px;
+  background: none;
+  font-weight: lighter;
+  background-color: #3f4e5d;
+}
+/*----text and links--------*/
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h1 span {
+  border: none;
+  padding: 6px 30px;
+  border-radius: 4px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+p {
+  margin: 0 0 20px 0;
+  widows: 2;
+}
+a {
+  color: #a3ce53;
+  font-weight: bold;
+}
+a:hover {
+  color: #a3ce53;
+}
+a:focus {
+  outline: none;
+  color: #a3ce53;
+}
+button,
+.btn {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 4px;
+  background-color: #a3ce53;
+  color: #ffffff;
+  margin: 10px 0;
+}
+button:hover,
+.btn:hover {
+  background-color: #3f4e5d;
+  color: #ffffff;
+}
+.darkblue-btn {
+  background-color: #3f4e5d;
+}
+.darkblue-btn:hover {
+  background-color: #20afe3;
+}
+.hover-blue:hover {
+  background-color: #20afe3;
+}
+.green-link {
+  color: #a3ce53 !important;
+  font-weight: normal;
+}
+hr {
+  border-top: 1px solid #3f4e5d;
+}
+/*----Color-------*/
+.white-background {
+  background-color: #ffffff;
+  color: #3f4e5d;
+}
+.darkblue-background {
+  background-color: #3f4e5d;
+  color: #ffffff;
+}
+.white-background-blue-text {
+  background-color: #ffffff;
+  color: #20afe3;
+}
+.blue-background {
+  background-color: #20afe3;
+  color: #ffffff;
+}
+.white-text {
+  color: #ffffff;
+}
+/*----Spacing------*/
+.no-padding {
+  padding: 0!important;
+}
+.main-margin-bottom {
+  margin-bottom: 100px !important;
+}
+.asics-main-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  float: left;
+}
+blockquote {
+  border-left: none;
+  font-weight: bold;
+  font-size: 27px;
+  height: 285px;
+}
+blockquote small {
+  color: #ffffff;
+  font-weight: normal;
+}
+.panel {
+  background-color: transparent;
+  border: none;
+}
+.panel .panel-heading {
+  background-color: transparent;
+  border: none;
+}
+.panel .panel-body {
+  border: none !important;
+}

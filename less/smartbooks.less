@@ -1,0 +1,267 @@
+@red:#b43944;
+@blue:#20afe3;
+@green:#a3ce53;
+@darkblue:#3f4e5d;
+@white:#ffffff;
+body{
+	font-family: 'Muli', sans-serif;
+	max-width: 100%;
+	overflow-x:hidden;
+	font-size:27px;
+	background:none;
+	font-weight: lighter;
+	background-color: @darkblue;
+}
+/*----text and links--------*/
+h1{
+	font-size: 60px;
+	font-weight: bold;
+	text-transform:uppercase;
+	span{
+		border: none;
+		padding:6px 30px;
+		border-radius: 4px;
+	}
+}
+h2{
+	font-size: 48px;
+}
+h3{
+	font-size: 32px;
+	text-transform: uppercase;;
+	font-weight: bold;
+}
+p{
+	margin: 0 0 20px 0;
+	widows: 2;
+}
+a{
+	color: @green;
+	font-weight: bold;
+}
+a:hover{
+	color:@green;
+}
+a:focus{
+	outline: none;
+	color:@green;
+}
+button, .btn{
+	font-size: 22px;
+	font-weight: bold;
+	text-transform:uppercase;
+	border: none;
+	padding:6px 15px;
+	border-radius: 4px;
+	background-color: @green;
+	color:@white;
+	margin: 10px 0;
+}
+button:hover, .btn:hover{
+	background-color:@darkblue;
+	color: @white;
+}
+.darkblue-btn{
+	background-color: @darkblue;
+}
+.darkblue-btn:hover{
+	background-color: @blue;
+}
+.hover-blue:hover{
+	background-color: @blue;
+}
+.green-link{
+	color:@green !important;
+	font-weight: normal;
+}
+hr{
+	border-top: 1px solid @darkblue;
+}
+/*----Color-------*/
+.white-background{
+	background-color: @white;
+	color:@darkblue;
+}
+.darkblue-background{
+	background-color: @darkblue;
+	color:@white;
+}
+.white-background-blue-text{
+	background-color: @white;
+	color:@blue;
+}
+.blue-background{
+	background-color: @blue;
+	color: @white;
+}
+.white-text{
+	color: @white;
+}
+/*----Spacing------*/
+.no-padding{
+	padding:0!important;
+}
+.main-margin-bottom{
+	margin-bottom: 100px !important;
+}
+.asics-main-section{
+	padding-top:100px;
+	padding-bottom: 100px;
+	float: left;
+}
+blockquote{
+	border-left: none;
+	font-weight: bold;
+	font-size: 27px;
+	height: 285px;
+	small{
+		color:@white;
+		font-weight: normal;
+	}
+}
+.panel{
+	background-color: transparent;
+	border: none;
+	.panel-heading{
+		background-color: transparent;
+		border: none;
+	}
+	.panel-body{
+		border: none !important;
+	}
+}
+/*-------Header----*/
+header{
+	background-color:@white;
+	margin-bottom: 0 !important;
+	.utlity-bar{
+		background-color: @darkblue;
+		color:@white;
+		font-size: 16px;
+		padding:11px 30px 0 20px;
+		a{
+			color: @white;
+		}
+		a:hover, a:focus{
+			color:@white;
+		}
+		.utlity-social li{
+			font-size: 22px;
+			padding: 0 15px;
+		}
+		.utlity-nav {
+			text-align: right;
+			padding-right: 15px;
+			li{
+				border-right: 1px solid @white;
+				padding:0 15px;
+			}
+			li:last-child{
+				border-right: none;
+				padding-right:0px;
+			}
+		}
+	}
+	.main-nav.affix {
+		top: 0;
+		width: 100%;
+		z-index: 900;
+		background-color: @white;
+		left: 0;
+	}
+	.main-nav.affix + .utility-bar {
+		padding-top: 50px;
+	}
+	.main-nav{
+		padding:8px 0;
+		-webkit-box-shadow: -8px 5px 37px -5px rgba(0,0,0,0.75);
+		-moz-box-shadow: -8px 5px 37px -5px rgba(0,0,0,0.75);
+		box-shadow: -8px 5px 37px -5px rgba(0,0,0,0.75);
+		.navbar-header {
+			margin-top: 8px;
+		}
+		.navbar-collapse{
+			padding-left: 0;
+		}
+		.chat-now{
+			max-width: 100px;
+			padding: 0 5px;
+		}
+		.nav-pills{
+			li{
+				a{
+					color:@darkblue;
+					font-weight: bold;
+					border-radius: 4px;
+					padding: 5px 10px;
+					margin: 0 10px;
+					font-size: 21px !important;
+				}
+				a:hover{
+					color:@white;
+					background-color:@darkblue;
+					padding: 5px 10px;
+				}
+				.active{
+					color:@white;
+					background-color:@darkblue;
+					padding: 5px 10px;
+				}
+			}
+			li.active > a, 
+			li.active > a:hover, 
+			li.active > a:focus{
+				color:@white;
+				background-color:@darkblue;
+				padding: 5px 10px;
+			}
+		}
+	}
+}
+#Home{
+	background-image: url('../images/Smartbooks-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/*-------Footer-----*/
+footer{
+	background-color: @darkblue;
+	color: @white;
+	font-size: 16px;
+	.free-demo-bar{
+		background-color: @red;
+		padding: 25px;
+		.btn{
+			background-color: @white;
+			color:@red;
+		}
+	}
+	.footer-blue-bar {
+		padding:20px 25px 10px 25px;
+		.row{
+			padding-bottom:40px;
+		}
+		.utlity-social li{
+			padding: 0 15px;
+		}
+		.utlity-nav{
+			li{
+				border-right: 1px solid @white;
+				padding:0 15px;
+			}
+			li:last-child{
+				border-right: none;
+				padding-right:s0px;
+			}
+		}
+	}
+	a{
+		color:@white;
+		font-size: 16px;
+	}
+	a:hover, a:focus{
+		color:@white;
+	}
+}
